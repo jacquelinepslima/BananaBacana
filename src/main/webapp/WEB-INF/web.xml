@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+	<display-name>Banana Bacana</display-name>
+
+	<servlet>
+		<servlet-name>cadastrar</servlet-name>
+		<servlet-class>banana.controller.cadastrarProdutoController
+		</servlet-class>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>consultar</servlet-name>
+		<servlet-class>banana.controller.consultarProdutoController
+		</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>modificar</servlet-name>
+		<servlet-class>banana.controller.modificarProdutoController
+		</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>cadastrar</servlet-name>
+		<url-pattern>/cadastrarProduto</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>consultar</servlet-name>
+		<url-pattern>/consultarProduto</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>modificar</servlet-name>
+		<url-pattern>/modificarProduto</url-pattern>
+	</servlet-mapping>
+	
+	</web-app>
